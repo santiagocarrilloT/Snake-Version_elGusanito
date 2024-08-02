@@ -1,0 +1,48 @@
+.contenedor {
+  display: flex;
+  justify-content: space-between; /* Espacio entre los elementos */
+  align-items: center; /* Alinear verticalmente al centro */
+}
+
+.classDiv1 {
+  display: flex;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: start;
+  justify-content: start;
+  align-items: center;
+  margin: 5px;
+}
+
+.classDiv2 {
+  display: flex;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: end;
+  justify-content: end;
+  align-items: center;
+  margin: 5px;
+}
+
+.imagenPuntaje,
+.imagenRecord {
+  padding: 0%;
+  width: 45px; /* Ajusta el ancho según tus necesidades */
+  height: auto;
+  background-color: transparent;
+  box-shadow: 1px 1px 1px 1px rgba(32, 32, 32, 0.3);
+}
+.imagenRecord {
+  width: 20px;
+}
+
+.textoInformacion {
+  /*Agregar texto a la mitad de altura dentro del div*/
+  justify-content: center;
+  margin: 20px;
+  margin-right: 20px;
+  /*font-size: 36px;*/
+  font-family: Rockwell;
+}
