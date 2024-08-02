@@ -1,0 +1,301 @@
+:root {
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  background-color: rgb(92, 20, 175);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Esto hace que el body ocupe toda la altura de la ventana del navegador */
+  margin: 0;
+  padding: 0;
+  background-color: rgb(13, 53, 85);
+  margin: 0px;
+}
+
+.areaTd {
+  box-shadow: none;
+  display: flex; /* Cambiado de inline-flex a flex para permitir el centrado adecuado */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una sola línea */
+  height: 100%; /* Ajusta esto según sea necesario */
+  width: 100%; /* Ajusta esto según sea necesario */
+}
+
+.areas1,
+.areas2,
+.manzana,
+.gusanito,
+.gusanitoCabeza {
+  box-shadow: none;
+  display: inline-flex; /* Cambiado a inline-flex para permitir el uso de flexbox */
+  border: 8px solid; /* Especifica el color en la propiedad border-color si es diferente entre clases */
+  height: 12px;
+  width: 12px;
+}
+
+.areas1 {
+  border-color: rgba(0, 140, 255);
+  background: rgb(0, 140, 255);
+  border-color: rgb(134, 69, 255, 0);
+  background: rgb(134, 69, 255);
+}
+
+.areas2 {
+  border-color: rgb(68, 0, 255);
+  background: rgb(68, 0, 255);
+  border-color: rgb(162, 128, 255, 0);
+  background: rgba(134, 69, 255, 0.884);
+}
+
+.manzana,
+.gusanitoCabeza,
+.gusanito {
+  background-image: url(../Img/Manuela.png);
+  border: 0px solid; /* Ajusta el grosor del borde aquí */
+  padding: 15px; /* Ajusta el padding para compensar el cambio en el tamaño del borde */
+  box-sizing: border-box; /* Asegura que el padding y el borde estén incluidos en las dimensiones del elemento */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 1px 1px 1px 1px rgba(32, 32, 32, 0.3);
+}
+
+.gusanito {
+  border-color: rgb(0, 174, 255);
+  border-radius: 12px;
+  background: rgb(0, 174, 255);
+}
+
+.gusanitoCabeza {
+  background-image: url(../Img/Dibujo.png);
+  /* border-color: rgb(252, 255, 253);
+  border-radius: 12px;
+  background: rgb(255, 255, 255); */
+}
+
+.areaBorder {
+  display: inline-table;
+  border: 8px solid rgb(170, 6, 6);
+  box-shadow: 2px 2px 2px 2px rgba(134, 5, 5, 0.2);
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 0%;
+}
+
+/* Añade los media necesarias */
+@media screen and (max-width: 636px) {
+  .areaTd {
+    box-shadow: none;
+    display: flex; /* Cambiado de inline-flex a flex para permitir el centrado adecuado */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una sola línea */
+    height: 100%; /* Ajusta esto según sea necesario */
+    width: 100%; /* Ajusta esto según sea necesario */
+  }
+
+  .areas1,
+  .areas2,
+  .manzana,
+  .gusanito,
+  .gusanitoCabeza {
+    box-shadow: none;
+    display: inline-flex; /* Cambiado a inline-flex para permitir el uso de flexbox */
+    border: 6px solid;
+    height: 8px;
+    width: 8px;
+  }
+
+  .areas1 {
+    border-color: rgb(134, 69, 255, 0);
+    background: rgb(134, 69, 255);
+  }
+
+  .areas2 {
+    border-color: rgb(162, 128, 255, 0);
+    background: rgba(134, 69, 255, 0.884);
+  }
+
+  .manzana,
+  .gusanitoCabeza,
+  .gusanito {
+    background-image: url(../Img/Manuela.png);
+    border: 0px solid; /* Ajusta el grosor del borde aquí */
+    padding: 11px; /* Ajusta el padding para compensar el cambio en el tamaño del borde */
+    box-sizing: border-box; /* Asegura que el padding y el borde estén incluidos en las dimensiones del elemento */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .gusanito {
+    border-color: rgb(0, 174, 255);
+    background: rgb(0, 174, 255);
+  }
+
+  .gusanitoCabeza {
+    background-image: url(../Img/Dibujo.png);
+    /* border-color: rgb(252, 255, 253);
+    border-radius: 12px;
+    background: rgb(255, 255, 255); */
+  }
+
+  .areaBorder {
+    display: inline-table;
+    border: 3px solid rgb(170, 6, 6);
+    box-shadow: 2px 2px 2px 2px rgba(134, 5, 5, 0.2);
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 0%;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .areaTd {
+    box-shadow: none;
+    display: flex; /* Cambiado de inline-flex a flex para permitir el centrado adecuado */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una sola línea */
+    height: 100%; /* Ajusta esto según sea necesario */
+    width: 100%; /* Ajusta esto según sea necesario */
+  }
+
+  .areas1,
+  .areas2,
+  .manzana,
+  .gusanito,
+  .gusanitoCabeza {
+    box-shadow: none;
+    display: inline-flex; /* Cambiado a inline-flex para permitir el uso de flexbox */
+    border: 4px solid; /* Especifica el color en la propiedad border-color si es diferente entre clases */
+    height: 6px;
+    width: 6px;
+  }
+
+  .areas1 {
+    border-color: rgb(134, 69, 255, 0);
+    background: rgb(134, 69, 255);
+  }
+
+  .areas2 {
+    border-color: rgb(162, 128, 255, 0);
+    background: rgba(134, 69, 255, 0.884);
+  }
+
+  .manzana,
+  .gusanitoCabeza,
+  .gusanito {
+    background-image: url(../Img/Manuela.png);
+    border: 0px solid; /* Ajusta el grosor del borde aquí */
+    padding: 8px; /* Ajusta el padding para compensar el cambio en el tamaño del borde */
+    box-sizing: border-box; /* Asegura que el padding y el borde estén incluidos en las dimensiones del elemento */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .gusanito {
+    border-color: rgb(0, 174, 255);
+    border-radius: 12px;
+    background: rgb(0, 174, 255);
+  }
+
+  .gusanitoCabeza {
+    background-image: url(../Img/Dibujo.png);
+    /* border-color: rgb(252, 255, 253);
+    border-radius: 12px;
+    background: rgb(255, 255, 255); */
+  }
+
+  .areaBorder {
+    display: inline-table;
+    border: 3px solid rgb(170, 6, 6);
+    box-shadow: 2px 2px 2px 2px rgba(134, 5, 5, 0.2);
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 0%;
+  }
+}
+
+@media screen and (max-width: 393px) {
+  .areaTd {
+    box-shadow: none;
+    display: flex; /* Cambiado de inline-flex a flex para permitir el centrado adecuado */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una sola línea */
+    height: 100%; /* Ajusta esto según sea necesario */
+    width: 100%; /* Ajusta esto según sea necesario */
+  }
+
+  .areas1,
+  .areas2,
+  .manzana,
+  .gusanito,
+  .gusanitoCabeza {
+    box-shadow: none;
+    display: inline-flex; /* Cambiado a inline-flex para permitir el uso de flexbox */
+    border: 3px solid; /* Especifica el color en la propiedad border-color si es diferente entre clases */
+    height: 5px;
+    width: 5px;
+  }
+
+  .areas1 {
+    border-color: rgb(134, 69, 255, 0);
+    background: rgb(134, 69, 255);
+  }
+
+  .areas2 {
+    border-color: rgb(162, 128, 255, 0);
+    background: rgba(134, 69, 255, 0.884);
+  }
+
+  .manzana,
+  .gusanitoCabeza,
+  .gusanito {
+    background-image: url(../Img/Manuela.png);
+    border: 0px solid; /* Ajusta el grosor del borde aquí */
+    padding: 6.5px; /* Ajusta el padding para compensar el cambio en el tamaño del borde */
+    box-sizing: border-box; /* Asegura que el padding y el borde estén incluidos en las dimensiones del elemento */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .gusanito {
+    border-color: rgb(0, 174, 255);
+    border-radius: 12px;
+    background: rgb(0, 174, 255);
+  }
+
+  .gusanitoCabeza {
+    background-image: url(../Img/Dibujo.png);
+    /* border-color: rgb(252, 255, 253);
+    border-radius: 12px;
+    background: rgb(255, 255, 255); */
+  }
+
+  .areaBorder {
+    display: inline-table;
+    border: 3px solid rgb(170, 6, 6);
+    box-shadow: 2px 2px 2px 2px rgba(134, 5, 5, 0.2);
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 0%;
+  }
+}
